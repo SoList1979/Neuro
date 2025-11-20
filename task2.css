@@ -130,7 +130,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 h1 {
@@ -322,14 +322,16 @@ li {
 .center-text {
     text-align: center;
 }
+
 .left-text {
     width: 95%;
     text-align: left;
 }
 
-/* p {
-    text-align: left;
-} */
+.bold {
+    font-weight: 900;
+    color: #00ffdd;
+}
 
 a {
     color: #ff0033;
@@ -362,6 +364,10 @@ a:active {
 @media (aspect-ratio < 0.7) {
     .header {
         font-size: 5vh;
+    }
+
+    .left-text {
+        font-size: 1.2vh;
     }
 
     h1 {
@@ -400,5 +406,7 @@ a:active {
 
     footer {
         font-size: 3vh;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
