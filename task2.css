@@ -5,34 +5,30 @@
     user-select: none;
 }
 
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: block;
-    background-image: url("fon.gif");
-    background-size: contain;
+/* === ФОН "МАТРИЦА" === */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    pointer-events: none;
 }
 
+/* === ОБЩИЕ СТИЛИ === */
 body {
     color: #7ecc00;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
+    background-color: #000;
 }
 
-header,
-nav {
-    width: 100%;
-    left: 0;
-}
-
-nav {
-    border: solid 0.3vmax #ffff00;
-}
-
+/* === ШАПКА === */
 header {
     font-family: "Times New Roman", Times, serif, sans-serif;
     background-color: #003344;
     color: #00ff99;
+    width: 100vw;
     height: 8vh;
     font-size: 3vh;
     top: 0;
@@ -53,6 +49,7 @@ header {
     );
 }
 
+/* === НАВИГАЦИЯ === */
 nav {
     font-family: Georgia, "Times New Roman", Times, serif;
     background-color: #440077;
@@ -68,20 +65,24 @@ nav {
     align-items: center;
     font-weight: bold;
     padding: 1vmax;
+    width: 100%;
+    border: solid 0.3vmax #ffff00;
 }
 
 nav a {
     color: #00ff99;
+    text-decoration: none;
 }
 
 nav a:hover {
     color: #ff3300;
 }
 
-nav a:action {
+nav a:active {
     color: #ffff00;
 }
 
+/* === ОСНОВНОЙ КОНТЕНТ === */
 main {
     position: static;
     margin-left: 5vw;
@@ -94,6 +95,7 @@ main {
     align-items: center;
 }
 
+/* === СЕКЦИИ === */
 section {
     background: radial-gradient(
         ellipse closest-corner at 50% 50%,
@@ -114,6 +116,7 @@ section {
     align-items: center;
 }
 
+/* === ЗАГОЛОВКИ === */
 h1,
 h2,
 h3,
@@ -123,14 +126,20 @@ h4 {
 
 h2 {
     font-size: 3vh;
+    font-family: "Courier New", Courier, monospace;
+    color: #00cccc;
 }
 
 h3 {
     font-size: 2.5vh;
+    font-family: "Times New Roman", Times, serif;
+    color: #aacc00;
 }
 
 h4 {
     font-size: 2vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #00dd88;
 }
 
 h1 {
@@ -138,21 +147,7 @@ h1 {
     text-shadow: 0.5vmax 0.5vmax 1vmax #0099aa;
 }
 
-h2 {
-    font-family: "Courier New", Courier, monospace;
-    color: #00cccc;
-}
-
-h3 {
-    font-family: "Times New Roman", Times, serif;
-    color: #aacc00;
-}
-
-h4 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #00dd88;
-}
-
+/* === ИЗОБРАЖЕНИЯ === */
 img {
     width: 100%;
     height: auto;
@@ -170,6 +165,7 @@ img {
     border: solid #ff3300 0.2vmax;
 }
 
+/* === БЛОКИ === */
 .top-list {
     margin: 0;
 }
@@ -188,6 +184,7 @@ img {
     padding: 0.5vmax;
 }
 
+/* === ТАБЛИЦЫ === */
 table {
     width: 95%;
     border-collapse: collapse;
@@ -208,9 +205,9 @@ th {
     text-align: center;
 }
 
+/* === ФОРМА === */
 .questions,
-form,
-table {
+form {
     margin: 1vmax;
 }
 
@@ -281,6 +278,7 @@ button:active {
     box-shadow: 0.4vmax 0.8vmax 0.7vmax #777777;
 }
 
+/* === ПОДВАЛ === */
 footer {
     background-color: #002233;
     color: #00ff33;
@@ -301,6 +299,7 @@ footer {
     align-items: center;
 }
 
+/* === СПИСКИ === */
 ul,
 ol {
     font-weight: bold;
@@ -313,7 +312,7 @@ li {
     margin: 1vmax 0;
 }
 
-#about,
+/* === ТЕКСТ === */
 .phrase {
     font-style: italic;
     font-size: 1.8vh;
@@ -333,6 +332,7 @@ li {
     color: #00ffdd;
 }
 
+/* === ССЫЛКИ === */
 a {
     color: #ff0033;
     text-decoration: none;
@@ -340,18 +340,18 @@ a {
 
 a:hover {
     color: #ffff00;
-    text-decoration: none;
 }
 
 a:active {
     color: #ffffff;
-    text-decoration: none;
 }
 
+/* === ЦЕЛЬ === */
 :target {
     scroll-margin-top: 13vh;
 }
 
+/* === РАДИО / ЧЕКБОКСЫ === */
 #yes,
 #no,
 #code,
@@ -361,36 +361,30 @@ a:active {
     height: 1vmax;
 }
 
+/* === АДАПТИВ === */
 @media (aspect-ratio < 0.7) {
     .header {
         font-size: 5vh;
     }
-
     .left-text {
         font-size: 1.2vh;
     }
-
     h1 {
         font-size: 5vh;
     }
-
     h2 {
         font-size: 2vh;
     }
-
     h3 {
         font-size: 2vh;
     }
-
     nav {
         height: 4vh;
         font-size: 1.2vh;
     }
-
     p {
         font-size: 1.2vh;
     }
-
     button,
     input,
     select,
@@ -398,12 +392,10 @@ a:active {
     table {
         font-size: 1.2vh;
     }
-
     ul,
     ol {
         font-size: 1.7vh;
     }
-
     footer {
         font-size: 3vh;
         flex-direction: column;

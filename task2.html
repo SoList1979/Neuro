@@ -8,6 +8,9 @@
         <link rel="shortcut icon" href="automove.png" type="image/png" />
     </head>
     <body>
+        Анимированный фон "Матрица"
+        <canvas id="matrix-canvas"></canvas>
+
         <header>
             <h1>Нейросети</h1>
         </header>
@@ -19,6 +22,8 @@
             <a href="#ask">Опрос</a>
             <a href="#contact">Контакты</a>
         </nav>
+
+        <canvas id="matrix-canvas"></canvas>
 
         <main>
             <section id="about" class="phrase">
@@ -83,6 +88,7 @@
                                     <img
                                         class="small-flag"
                                         src="flags/cn.png"
+                                        alt="Флаг Китая"
                                     />
                                 </div>
                             </td>
@@ -96,6 +102,7 @@
                                     <img
                                         class="small-flag"
                                         src="flags/cn.png"
+                                        alt="Флаг Китая"
                                     />
                                 </div>
                             </td>
@@ -109,6 +116,7 @@
                                     <img
                                         class="small-flag"
                                         src="flags/ru.png"
+                                        alt="Флаг России"
                                     />
                                 </div>
                             </td>
@@ -122,6 +130,7 @@
                                     <img
                                         class="small-flag"
                                         src="flags/ru.png"
+                                        alt="Флаг России"
                                     />
                                 </div>
                             </td>
@@ -294,5 +303,8 @@
             <p>&copy; 2025</p>
             <p>Гид по нейросетям. Все права защищены.</p>
         </footer>
+
+        <!-- Подключение скрипта анимации фона -->
+        <script src="matrix.js"></script>
     </body>
 </html>
