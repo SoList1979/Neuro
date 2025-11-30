@@ -8,292 +8,311 @@
         <link rel="shortcut icon" href="automove.png" type="image/png" />
     </head>
     <body>
-        Анимированный фон "Матрица"
-        <canvas id="matrix-canvas"></canvas>
+        <div class="scroller">
+            <!-- Анимированный фон "Матрица" -->
+            <canvas id="matrix-canvas"></canvas>
 
-        <header>
-            <h1>Нейросети</h1>
-        </header>
+            <header>
+                <h1>Нейросети</h1>
+            </header>
 
-        <nav>
-            <a href="#about">О чём это я...</a>
-            <a href="#llms">Описания</a>
-            <a href="#mems">Мемы</a>
-            <a href="#ask">Опрос</a>
-            <a href="#contact">Контакты</a>
-        </nav>
+            <nav>
+                <a href="#about">О чём это я...</a>
+                <a href="#llms">Описания</a>
+                <a href="#mems">Мемы</a>
+                <a href="#ask">Опрос</a>
+                <a href="#contact">Контакты</a>
+            </nav>
 
-        <canvas id="matrix-canvas"></canvas>
+            <canvas id="matrix-canvas"></canvas>
 
-        <main>
-            <section id="about" class="phrase">
-                <h2 class="bold">О проекте</h2>
-                <br />
-                <p>Итак... нейросеть.</p>
-                <br />
+            <main>
+                <section id="about" class="phrase">
+                    <h2 class="bold">О проекте</h2>
+                    <br />
+                    <p>Итак... нейросеть.</p>
+                    <br />
 
-                <p class="left-text bold">Она же:</p>
-                <p class="left-text">
-                    Большая Языковая Модель (БЯМ 😊 ) (LLM).
-                </p>
-                <p class="left-text">Large Language Model (LLM).</p>
-                <br />
+                    <p class="left-text bold">Она же:</p>
+                    <p class="left-text">
+                        Большая Языковая Модель (БЯМ 😊 ) (LLM).
+                    </p>
+                    <p class="left-text">Large Language Model (LLM).</p>
+                    <br />
 
-                <p class="left-text bold">Она же:</p>
-                <p class="left-text">
-                    Искуственный Интеллект (ласково: ИИ-шечка) — Artificial
-                    Intelligence (AI).
-                </p>
-                <br />
+                    <p class="left-text bold">Она же:</p>
+                    <p class="left-text">
+                        Искуственный Интеллект (ласково: ИИ-шечка) — Artificial
+                        Intelligence (AI).
+                    </p>
+                    <br />
 
-                <p class="left-text bold">Она же:</p>
-                <p class="left-text">
-                    <s> Элла Кацнельбоген, Людмила Огуренкова, </s>
-                </p>
-                <p class="left-text">
-                    <s> Изольда Меньшова, Валентина Понеяд ... </s>
-                </p>
-                <br />
-            </section>
+                    <p class="left-text bold">Она же:</p>
+                    <p class="left-text">
+                        <s> Элла Кацнельбоген, Людмила Огуренкова, </s>
+                    </p>
+                    <p class="left-text">
+                        <s> Изольда Меньшова, Валентина Понеяд ... </s>
+                    </p>
+                    <br />
+                </section>
 
-            <section id="llms">
-                <h2>LLM-Нейросеть-ИИ</h2>
+                <section id="llms">
+                    <h2>LLM-Нейросеть-ИИ</h2>
 
-                <h3>Сравнительная таблица</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Нейронка (ИИ)</th>
-                            <th>Страна</th>
-                            <th>Характер</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>DeepSeek</td>
-                            <td>
-                                <div class="row-order">
-                                    <p>КНР</p>
-                                    <img
-                                        class="small-flag"
-                                        src="flags/cn.png"
-                                        alt="Флаг Китая"
-                                    />
-                                </div>
-                            </td>
-                            <td>Подобострастный</td>
-                        </tr>
-                        <tr>
-                            <td>Qwen</td>
-                            <td>
-                                <div class="row-order">
-                                    <p>КНР</p>
-                                    <img
-                                        class="small-flag"
-                                        src="flags/cn.png"
-                                        alt="Флаг Китая"
-                                    />
-                                </div>
-                            </td>
-                            <td>Коварный</td>
-                        </tr>
-                        <tr>
-                            <td>Алиса AI</td>
-                            <td>
-                                <div class="row-order">
-                                    <p>РФ</p>
-                                    <img
-                                        class="small-flag"
-                                        src="flags/ru.png"
-                                        alt="Флаг России"
-                                    />
-                                </div>
-                            </td>
-                            <td>Разговорчивый</td>
-                        </tr>
-                        <tr>
-                            <td>GigaChat</td>
-                            <td>
-                                <div class="row-order">
-                                    <p>РФ</p>
-                                    <img
-                                        class="small-flag"
-                                        src="flags/ru.png"
-                                        alt="Флаг России"
-                                    />
-                                </div>
-                            </td>
-                            <td>Обидчивый</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <h3>Сравнительная таблица</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Нейронка (ИИ)</th>
+                                <th>Страна</th>
+                                <th>Характер</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DeepSeek</td>
+                                <td>
+                                    <div class="row-order">
+                                        <p>КНР</p>
+                                        <img
+                                            class="small-flag"
+                                            src="flags/cn.png"
+                                            alt="Флаг Китая"
+                                        />
+                                    </div>
+                                </td>
+                                <td>Подобострастный</td>
+                            </tr>
+                            <tr>
+                                <td>Qwen</td>
+                                <td>
+                                    <div class="row-order">
+                                        <p>КНР</p>
+                                        <img
+                                            class="small-flag"
+                                            src="flags/cn.png"
+                                            alt="Флаг Китая"
+                                        />
+                                    </div>
+                                </td>
+                                <td>Коварный</td>
+                            </tr>
+                            <tr>
+                                <td>Алиса AI</td>
+                                <td>
+                                    <div class="row-order">
+                                        <p>РФ</p>
+                                        <img
+                                            class="small-flag"
+                                            src="flags/ru.png"
+                                            alt="Флаг России"
+                                        />
+                                    </div>
+                                </td>
+                                <td>Разговорчивый</td>
+                            </tr>
+                            <tr>
+                                <td>GigaChat</td>
+                                <td>
+                                    <div class="row-order">
+                                        <p>РФ</p>
+                                        <img
+                                            class="small-flag"
+                                            src="flags/ru.png"
+                                            alt="Флаг России"
+                                        />
+                                    </div>
+                                </td>
+                                <td>Обидчивый</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                <h4>Поимённо:</h4>
-                <ul>
-                    <li>
-                        <a href="https://chat.deepseek.com/" target="_blank"
-                            >DeepSeek</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://chat.qwen.ai/" target="_blank">Qwen</a>
-                    </li>
-                    <li>
-                        <a href="https://alice.yandex.ru/" target="_blank"
-                            >Алиса</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://giga.chat/" target="_blank"
-                            >GigaChat
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                    <h4>Поимённо:</h4>
+                    <ul>
+                        <li>
+                            <a href="https://chat.deepseek.com/" target="_blank"
+                                >DeepSeek</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://chat.qwen.ai/" target="_blank"
+                                >Qwen</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://alice.yandex.ru/" target="_blank"
+                                >Алиса</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://giga.chat/" target="_blank"
+                                >GigaChat
+                            </a>
+                        </li>
+                    </ul>
+                </section>
 
-            <section id="mems">
-                <h2>Мемы про ИИ:</h2>
-                <div class="around">
-                    <h3>"Тот самый чел"</h3>
-                    <img class="mem-pic" src="pictures/чел.jpg" alt="Чел" />
-                    <p class="phrase">Будьте вежливы!</p>
-                </div>
-                <div class="around">
-                    <h3>"Грамотный Prompt"</h3>
-                    <img
-                        class="mem-pic"
-                        src="pictures/prompt.jpg"
-                        alt="Prompt"
-                    />
-                    <p class="phrase">Правильно формулируйте!</p>
-                </div>
-                <div class="around">
-                    <h3>"Вкус мозга"</h3>
-                    <img class="mem-pic" src="pictures/мозг.jpg" alt="Мозг" />
-                    <p class="phrase">Творчество развивает!</p>
-                </div>
-            </section>
-
-            <section id="ask">
-                <h2>Поделитесь впечатлениями</h2>
-
-                <form id="ask-form">
-                    <div class="questions">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="name" required />
+                <section id="mems">
+                    <h2>Мемы про ИИ:</h2>
+                    <div class="around">
+                        <h3>"Тот самый чел"</h3>
+                        <img class="mem-pic" src="pictures/чел.jpg" alt="Чел" />
+                        <p class="phrase">Будьте вежливы!</p>
                     </div>
-
-                    <div class="questions">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+                    <div class="around">
+                        <h3>"Грамотный Prompt"</h3>
+                        <img
+                            class="mem-pic"
+                            src="pictures/prompt.jpg"
+                            alt="Prompt"
+                        />
+                        <p class="phrase">Правильно формулируйте!</p>
                     </div>
-
-                    <div class="questions">
-                        <label for="llm">Нейронка :</label>
-                        <select id="llm" name="llm">
-                            <option value="">--Имя нейронки--</option>
-                            <option value="DeepSeek">DeepSeek</option>
-                            <option value="Qwen">Qwen</option>
-                            <option value="Алиса">Алиса</option>
-                            <option value="GigaChat">GigaChat</option>
-                        </select>
+                    <div class="around">
+                        <h3>"Вкус мозга"</h3>
+                        <img
+                            class="mem-pic"
+                            src="pictures/мозг.jpg"
+                            alt="Мозг"
+                        />
+                        <p class="phrase">Творчество развивает!</p>
                     </div>
+                </section>
 
-                    <div class="questions">
-                        <label class="lb10">Понравилось с ИИ?</label>
+                <section id="ask">
+                    <h2>Поделитесь впечатлениями</h2>
 
-                        <div class="row-order">
+                    <form id="ask-form">
+                        <div class="questions">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="questions">
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="questions">
+                            <label for="llm">Нейронка :</label>
+                            <select id="llm" name="llm">
+                                <option value="">--Имя нейронки--</option>
+                                <option value="DeepSeek">DeepSeek</option>
+                                <option value="Qwen">Qwen</option>
+                                <option value="Алиса">Алиса</option>
+                                <option value="GigaChat">GigaChat</option>
+                            </select>
+                        </div>
+
+                        <div class="questions">
+                            <label class="lb10">Понравилось с ИИ?</label>
+
+                            <div class="row-order">
+                                <div>
+                                    <label for="like" class="lb11">ДА</label>
+                                    <input
+                                        type="radio"
+                                        id="yes"
+                                        name="travel-type"
+                                        value="like"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="dislike" class="lb11"
+                                        >НЕТ</label
+                                    >
+                                    <input
+                                        type="radio"
+                                        id="no"
+                                        name="travel-type"
+                                        value="dislike"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="questions">
+                            <label class="lb20">Для чего применяли ИИ?</label>
+
                             <div>
-                                <label for="like" class="lb11">ДА</label>
+                                <label for="code" class="lb21">Код</label>
                                 <input
-                                    type="radio"
-                                    id="yes"
-                                    name="travel-type"
-                                    value="like"
+                                    type="checkbox"
+                                    id="code"
+                                    name="works"
+                                    value="code"
                                 />
                             </div>
                             <div>
-                                <label for="dislike" class="lb11">НЕТ</label>
+                                <label for="picture" class="lb21"
+                                    >Рисунок</label
+                                >
                                 <input
-                                    type="radio"
-                                    id="no"
-                                    name="travel-type"
-                                    value="dislike"
+                                    type="checkbox"
+                                    id="picture"
+                                    name="works"
+                                    value="picture"
+                                />
+                            </div>
+                            <div>
+                                <label for="text" class="lb21">Текст</label>
+                                <input
+                                    type="checkbox"
+                                    id="text"
+                                    name="works"
+                                    value="text"
                                 />
                             </div>
                         </div>
-                    </div>
 
-                    <div class="questions">
-                        <label class="lb20">Для чего применяли ИИ?</label>
-
-                        <div>
-                            <label for="code" class="lb21">Код</label>
-                            <input
-                                type="checkbox"
-                                id="code"
-                                name="works"
-                                value="code"
-                            />
+                        <div class="form-group">
+                            <label for="comments"
+                                >Расскажите нам подробнее:</label
+                            >
+                            <textarea
+                                id="comments"
+                                name="comments"
+                                rows="4"
+                            ></textarea>
                         </div>
-                        <div>
-                            <label for="picture" class="lb21">Рисунок</label>
-                            <input
-                                type="checkbox"
-                                id="picture"
-                                name="works"
-                                value="picture"
-                            />
-                        </div>
-                        <div>
-                            <label for="text" class="lb21">Текст</label>
-                            <input
-                                type="checkbox"
-                                id="text"
-                                name="works"
-                                value="text"
-                            />
-                        </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="comments">Расскажите нам подробнее:</label>
-                        <textarea
-                            id="comments"
-                            name="comments"
-                            rows="4"
-                        ></textarea>
-                    </div>
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Очистить</button>
+                    </form>
+                </section>
 
-                    <button type="submit">Отправить</button>
-                    <button type="reset">Очистить</button>
-                </form>
-            </section>
+                <section id="contact">
+                    <h2>Контакты</h2>
+                    <p class="phrase center-text">Информация это — власть!</p>
+                    <p class="phrase center-text">Поделитесь ею с нами:</p>
 
-            <section id="contact">
-                <h2>Контакты</h2>
-                <p class="phrase center-text">Информация это — власть!</p>
-                <p class="phrase center-text">Поделитесь ею с нами:</p>
+                    <ul class="phrase">
+                        <li>
+                            Телефон:
+                            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+                        </li>
+                        <li>
+                            Email:
+                            <a href="mailto:ask@ai.ru">ask@ai.ru</a>
+                        </li>
+                        <li>Адрес: Москва, Самый Центр, д. 1</li>
+                    </ul>
+                </section>
+            </main>
 
-                <ul class="phrase">
-                    <li>
-                        Телефон:
-                        <a href="tel:+79991234567">+7 (999) 123-45-67</a>
-                    </li>
-                    <li>
-                        Email:
-                        <a href="mailto:ask@ai.ru">ask@ai.ru</a>
-                    </li>
-                    <li>Адрес: Москва, Самый Центр, д. 1</li>
-                </ul>
-            </section>
-        </main>
+            <footer>
+                <p>&copy; 2025 Гид по нейросетям. Все права защищены.</p>
+            </footer>
 
-        <footer>
-            <p>&copy; 2025 Гид по нейросетям. Все права защищены.</p>
-        </footer>
-
-        <!-- Подключение скрипта анимации фона -->
-        <script src="matrix.js"></script>
+            <!-- Подключение скрипта анимации фона -->
+            <script src="matrix.js"></script>
+        </div>
     </body>
 </html>

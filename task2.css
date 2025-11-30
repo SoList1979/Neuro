@@ -112,6 +112,9 @@ section {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    scroll-margin-top: calc(
+        10vh + 4vh + 2vh
+    ); /* Высота header + nav + отступ */
 }
 
 /* === ЗАГОЛОВКИ === */
@@ -351,6 +354,10 @@ a:active {
 /* === ЦЕЛЬ === */
 :target {
     scroll-margin-top: calc(10vh + 4vh + 2vh);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* === РАДИО / ЧЕКБОКСЫ === */
